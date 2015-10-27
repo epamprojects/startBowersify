@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<!--build css-->
+		<link rel="stylesheet" href="../build/styles/main.css"/>
+		<!--build media css-->
+		<link rel="stylesheet" href="../build/styles/media.css"/>
+	</head>
+
+	<body>
+		<div id="render"></div>
+
+		<script id="module" type="tmpl/lodash">
+					<!--template-->
+					<div class="pa-color-array" state-position="0">
+						<div class="pa-color-array_filter_wrapper">
+								<div class="pa-color-array_filter">
+
+									<!--pa-color-array_filter_item_wrapper-->
+									<%_.each(obj, function(item){%>
+
+										<span href="" class="pa-color-array_filter_item_wrapper" data-link="#/<%=item.id%>_color">
+											<span class="pa-color-array_filter_item">
+												<span class="pa-color-array_filter_item_circle" style="background: <%=item.filterColor%>"></span>
+												<span class="pa-color-array_filter_item_border pa-color-array_filter_item_border__hide" style="border-color:<%=item.filterColor%>"></span>
+												<span class="pa-color-array_filter_title_wrapper">
+													<span class="pa-color-array_filter_title"><%=item.nameEn%></span>
+												</span>
+											</span>
+										</span>
+
+									<%})%>
+								</div>
+						</div>
+
+						<div class="pa-color-array_palletes_wrapper">
+							<div class="pa-color-array_palletes_wrapper_inner">
+								<div class="pa-color-array_palletes ">
+
+								<!--pa-color-array_pallete-->
+								<%_.each(obj, function(item){%>
+									<div class="pa-color-array_pallete"  id="#/<%=item.id%>_color">
+										<%_.each(item.filterPallete, function(color){%>
+											<div class="pa-color-array_pallete_item_color_wrapper">
+													<div class="pa-color-array_pallete_item_color" style="background:<%=color%>"></div>
+											</div>
+										<%})%>
+									</div>
+								<%})%>
+
+							</div>
+							</div>
+						</div>
+					</div>
+					<!--/template-->
+
+		</script>
+		<!--build js-->
+		<script src="../build/js/findem.js"></script>
+	</body>
+</html>

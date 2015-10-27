@@ -1,0 +1,31 @@
+<!--pa-color-array-->
+<div class="pa-color-array">
+
+	<div class="pa-color-array_filter_wrapper">
+
+		<div class="pa-color-array_filter">
+
+			<a href="#{{item.id}}_color" class="pa-color-array_filter_item_wrapper" ng-repeat="item in data">
+				<span class="pa-color-array_filter_item" style="background: {{item.filterTitle}}"></span>
+				<span class="pa-color-array_filter_item_border pa-color-array_filter_item_border__hide" style="border-color:{{item.filterTitle}}"></span>
+			</a>
+
+		</div>
+	</div>
+
+	<div class="pa-color-array_palletes_wrapper">
+		<div class="pa-color-array_palletes">
+			<div class="pa-color-array_pallete" ng-repeat="item in data" id="{{item.id}}_color">
+				<div class="pa-color-array_pallete_item_color_wrapper" ng-repeat="color in item.filterPalette">
+					<div class="pa-color-array_pallete_item_color" style="background: {{color}}"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+

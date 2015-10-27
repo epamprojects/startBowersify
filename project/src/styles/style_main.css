@@ -1,0 +1,136 @@
+
+/*
+pa-color-array
+*/
+
+
+.pa-color-array {
+  width: 800px;
+  margin: 0 auto;
+  background: white;
+  height: 1115px;
+  overflow: hidden;
+}
+
+
+/*
+pa-color-array_filter
+*/
+.pa-color-array_filter_wrapper {
+  width: 700px;
+  height: 865px;
+  overflow: hidden;
+  padding: 41px 0px 40px 0px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.pa-color-array_filter {
+  height: 130px;
+  overflow: hidden;
+}
+
+.pa-color-array_filter_item_wrapper {
+  width: 80px;
+  height: 135px;
+  float: left;
+  text-decoration: none;
+  padding-right: 23px;
+}
+
+.pa-color-array_filter_item {
+  display: block;
+  width: 80px;
+  position: relative;
+}
+
+.pa-color-array_filter_item_circle {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 9px;
+  top: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pa-color-array_filter_item_border {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-width: 4px;
+  border-style: solid;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.pa-color-array_filter_title_wrapper {
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+  height: 34px;
+  overflow: hidden;
+}
+
+.pa-color-array_filter_title {
+  font-size: 12px;
+  color: black;
+  font-family: 'GothamHTF-bold', tahoma, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.pa-color-array_filter_item_border__hide {
+  display: none;
+}
+
+
+/*
+pa-color-array_pallete
+*/
+.pa-color-array_palletes {
+  width: 725px;
+  margin: 0 auto;
+}
+
+.pa-color-array_pallete {
+  float: left;
+  width: 750px;
+  display: none;
+}
+
+.pa-color-array_pallete_item_color_wrapper {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.pa-color-array_pallete_item_color {
+  display: block;
+  width: 172px;
+  height: 180px;
+}
+
+
+.show-border{
+  display: block;
+}
+
+.show-pallete {
+  display: block;
+}
+
+.pa-color-array_palletes_wrapper{
+  height: 852px;
+  overflow: hidden;
+}
+
+.pa-color-array_palletes_wrapper_inner{
+
+}
+.pa-color-array_palletes {
+  overflow: hidden;
+}
